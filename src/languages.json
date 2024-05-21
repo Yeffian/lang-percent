@@ -1,0 +1,20 @@
+{
+    "json": "JSON",
+    "js": "Javascript",
+    "ts": "Typescript",
+    "py": "Python",
+    "cs": "C#",
+    "c": "C",
+    "cpp": "C++",
+    "h": "C",
+    "html": "HTML",
+    "css": "CSS",
+    "rb": "Ruby",
+    "go": "Golang",
+    "java": "Java",
+    "rs": "Rust",
+    "swift": "Swift",
+    "kt": "Kotlin",
+    "groovy": "Groovy",
+    "sh": "Bash Script"
+}
