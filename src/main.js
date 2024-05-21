@@ -42,13 +42,16 @@ figlet("lang-percent", (err, text) => {
   
   const files = traverseFiles(process.cwd(), foldersToIgnore);  
   const numberOfFiles = files.length;
-  for (var file of files) {
-    const ext = file['ext'].toLowerCase();
 
-    if (extensionCounts.hasOwnProperty(ext)) {
-      extensionCounts[ext] = extensionCounts[ext] + 1;
-    } else {
-      extensionCounts[ext] = 1;
+  for (var file of files) {
+    const ext = file['ext'];
+    
+    if (Object.keys(languages).includes(ext)) {
+      if (extensionCounts.hasOwnProperty(ext)) {
+        extensionCounts[ext] = extensionCounts[ext] + 1;
+      } else {
+        extensionCounts[ext] = 1;
+      }  
     }
   }
 
